@@ -72,14 +72,8 @@ All FRs are governed by RLS: students see only their data; managers only their c
 - Payments-first visibility to canteens.
 - Enforce RLS; service-role keys server-side only.
 
-## 7. Requirements Engineering (Week 1 Summary)
 
-- Elicitation: Notes from stakeholders (students/managers), campus constraints, Week 1 planning.
-- Specification: This SRS + detailed IEEE SRS in README; domain captured in schema.
-- Validation: Professor review; peer review; small UI prototype walkthrough.
-- Change: Versioned docs; RTM seeds; issues tracked with clear FR/NFR IDs.
-
-## 8. Decision Model (Example)
+## 7. Decision Model (Example)
 
 Decision Table: Show order to manager queue
 
@@ -90,17 +84,16 @@ Decision Table: Show order to manager queue
 | R3   | No                | Any                    | Any                     | Do not display          |
 | R4   | Yes               | Yes                    | No                      | Hide; deny access       |
 
-## 9. Traceability Seeds (Sample)
+## 8. Traceability Seeds (Sample)
 
 - FR-4/FR-5 → Endpoints `/api/checkout`, `/api/webhooks/stripe`; Tables `orders`, `order_items`; Event: realtime.
 - FR-6 → Column `orders.status`; Realtime subscription; Manager UI.
 - FR-7 → Table `feedback`; RLS policies.
 
-## 10. Acceptance & Change Control
+## 9. Acceptance & Change Control
 
 - Acceptance: Feature demos against FR/NFR checklists; walkthrough with canteen rep.
 - Change Control: Requests logged with rationale; SRS updated with version/date and impacted FR/NFR.
 
 ---
 
-Short, complete, and verifiable: this SRS defines what the system must do in Week 1 planning without prescribing implementation details.
