@@ -1,9 +1,6 @@
 # UniFood —  Software Requirements Specification (SRS)
 
 
-This concise SRS aligns with the course guidance on requirements analysis and specification. It states what the system must do (black-box), avoids “how,” and remains verifiable, consistent, and change-friendly.
-
----
 
 ## 1. Introduction
 
